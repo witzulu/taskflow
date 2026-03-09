@@ -1,21 +1,15 @@
-import { Link } from "react-router-dom"
-
-function Navbar() {
+export default function Navbar() {
   return (
-    <nav style={{ padding: "10px", background: "#333" }}>
-      <Link to="/" style={{ color: "white", marginRight: "15px" }}>
-        Dashboard
-      </Link>
+    <div className="h-16 bg-white shadow flex items-center justify-between px-6">
 
-      <Link to="/tasks" style={{ color: "white", marginRight: "15px" }}>
-        Tasks
-      </Link>
+      <h1 className="font-semibold">
+        TaskFlow Dashboard
+      </h1>
 
-      <Link to="/settings" style={{ color: "white" }}>
-        Settings
-      </Link>
-    </nav>
+      <div className="text-sm text-gray-500">
+        Welcome back
+      </div>
+
+    </div>
   )
 }
-
-export default Navbar
